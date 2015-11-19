@@ -1,0 +1,44 @@
+/***** HEADER *****/
+#cap {
+    width: 100%; 
+    height: $cap-height; 
+    position: absolute; 
+    z-index: -100; 
+}
+
+#header {
+    width: 100%;
+    _height: $header-height;
+    
+    img {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+}
+
+#logo {
+    position: relative;
+    text-align: center;
+}
+
+#who {
+    text-decoration: none;
+    font: normal bold 3em $logo-font-family, $substitute-font-family;
+    text-align: center;
+    color: #555;
+    text-shadow: 3px 3px 5px #777;
+}
+
+#what {
+    color: $secondary-color;
+    font: normal normal 1.2em $default-font-family;
+    text-align: right;
+}
+
+#why { 
+    color: $secondary-color; 
+    text-align: center;
+    font: italic normal 1.5em/1.2em 'Eras Bk BT', $substitute-font-family;
+    text-shadow: 3px 3px 5px #777;
+}

@@ -1,0 +1,28 @@
+#wrap {
+    background-color: transparent;
+    color: #000;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; // makes any absolute element reletive to container
+    font: $default-font;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid $theme-container-color;
+    padding: 0 1.25em;
+    overflow: hidden;
+}
+
+.with-pads {
+    padding: 20px;
+}
+
+.no-pads {
+    margin: -20px -21px -21px;  //cater for .box border
+}
+
+.full-width {
+    width: 100%;
+}

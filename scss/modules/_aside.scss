@@ -1,0 +1,27 @@
+//Aside
+#aside {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#aside-sidebar {
+    text-decoration: none;
+    h3 {
+        margin: 0;
+    }
+    li a {
+        text-decoration: none;
+    }
+    ul.children {
+        margin-left: 1.25rem;
+    }
+}
+
+#aside-sidebar > li {
+    margin-bottom: 1.25rem;
+}
+
+#wrap ul.sidebar ul {
+    list-style-type: none;
+    margin-left: 0;
+}

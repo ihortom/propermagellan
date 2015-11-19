@@ -1,0 +1,22 @@
+//Foundation amendment
+.contain-to-grid {
+    background: transparent;
+}
+
+.column,
+.columns {
+    padding: 0;
+}
+
+.row .row,
+form .row .row {
+    margin: 0;
+}
+
+.row-with-sidebar .cell {
+    min-width: 340px !important;
+}
+
+.row .grid-10 {  //to be used with 10/5 columns
+    width: 120%;
+}

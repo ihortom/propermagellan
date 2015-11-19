@@ -1,0 +1,19 @@
+//Gallery
+
+/*#gallery {
+    padding-top: 7px;
+    img {
+        margin: 0 5px;
+        &:hover {
+            border-color: $theme-container-color !important;
+        }
+    }
+}*/
+//overwrite wordpress rules
+.gallery {
+    text-align: center !important;
+    .gallery-item {
+        display: inline-block !important;
+        float: none !important;
+    }
+}
