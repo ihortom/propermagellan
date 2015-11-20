@@ -1,16 +1,17 @@
 //Media directives
-@media only screen and (max-width: 40em) {
-    #name {
-        padding-right: 0;
-    }
-    #email {
-        padding-left: 0;
-    }
-}
 
 @media only screen and (min-width: 21.25em) and (max-width: 42.5em) {   // 340px - 680px
     #footer #footer-sidebar li.widget {
         width: 49%;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    #header {
+        display: block;
+    }
+    .title-area {
+        display: none;
     }
 }
 
@@ -22,48 +23,8 @@
         line-height: 1.5em;
     }
     
-    #aside {
-        width: 280px;
-        display: table-cell;
-        vertical-align: top;
-        padding-top: 0;
-    }
-
-    #aside.right-sidebar {
-        padding-left: 20px;
-    }
-    
-    #aside.left-sidebar {
-        padding-right: 20px;
-    }
-    
-    .row-with-sidebar {
-        display: table;
-        table-layout: fixed;
-        .cell {
-            display: table-cell;
-            width: 100%;
-        }
-    }
-      
     #footer #footer-sidebar li.widget {
         width: 24%;
-    }
-}
-
-@media only screen and (min-width: 56.25em) {   //900px
-  nav.top-bar {
-    text-align:center;
-  }
-  section.top-bar-section {
-    display: inline-block;
-  }
-  nav.left-off-canvas-menu,
-  nav.tab-bar {
-      display: none;
-  } 
-  #topmenu {
-        display: block;
     }
 }
 
@@ -71,11 +32,5 @@
     #wrap { 
         width: $main-content-max-width; 
     }  
-    #name.medium-6 {
-        padding-right: 0;
-    }
-    #email.medium-6 {
-        padding-left: 0;
-    }
 }
 

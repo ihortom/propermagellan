@@ -20,7 +20,7 @@
                     'depth'          => '1', 
                     'link_before'    => '', 
                     'link_after'     => '',
-                    'items_wrap'     => '<ul id="%1$s" class="right %2$s">%3$s</ul>',
+                    'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                     'walker'         => new Magelan_Walker()
                 ) );
             }

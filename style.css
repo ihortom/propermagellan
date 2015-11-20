@@ -92,6 +92,7 @@ button,
   z-index: -100; }
 
 #header {
+  display: none;
   width: 100%;
   _height: 150px; }
   #header img {
@@ -191,6 +192,9 @@ button,
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
   padding: 0; }
+
+[data-magellan-expedition-clone] {
+  visibility: hidden; }
 
 .menu-icon a .fa {
   padding-top: .125em; }
@@ -529,6 +533,30 @@ span.author {
     text-decoration: none;
     color: #008CBA; }
 
+#wrap {
+  background-color: transparent;
+  color: #000;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font: normal normal 1em Philosopher, "Open Sans", Verdana, Helvetica, Tahoma, Arial, sans-serif; }
+
+.box {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #008CBA;
+  padding: 0 1.25em;
+  overflow: hidden; }
+
+.with-pads {
+  padding: 20px; }
+
+.no-pads {
+  margin: -20px -21px -21px; }
+
+.full-width {
+  width: 100%; }
+
 input[type=submit],
 .read-more,
 .button.tiny {
@@ -538,5 +566,28 @@ input[type=submit],
   cursor: pointer;
   font-weight: bold;
   font-family: "Open Sans", Verdana, Helvetica, Tahoma, Arial, sans-serif; }
+
+@media only screen and (min-width: 21.25em) and (max-width: 42.5em) {
+  #footer #footer-sidebar li.widget {
+    width: 49%; } }
+@media only screen and (min-width: 40em) {
+  #header {
+    display: block; }
+
+  .title-area {
+    display: none; } }
+@media only screen and (min-width: 42.5em) {
+  #who {
+    font-size: 4.0em; }
+
+  #why {
+    font-size: 1.5em;
+    line-height: 1.5em; }
+
+  #footer #footer-sidebar li.widget {
+    width: 24%; } }
+@media only screen and (min-width: 64.0625em) {
+  #wrap {
+    width: 1000px; } }
 
 /*# sourceMappingURL=style.css.map */

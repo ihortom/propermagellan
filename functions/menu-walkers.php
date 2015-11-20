@@ -20,13 +20,13 @@ class Magelan_Walker extends Walker_Nav_Menu {
         $id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth );
         $id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-        $output .= $indent . '<li data-magellan-arrival="'. $item->ID . '" ' . $id . $class_names .'>';
+        $output .= $indent . '<li data-magellan-arrival="'. $item->object_id . '" ' . $id . $class_names .'>';
 
         $atts = array();
         $atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
         $atts['target'] = ! empty( $item->target )     ? $item->target     : '';
         $atts['rel']    = ! empty( $item->xfn )        ? $item->xfn        : '';
-        $atts['href']   = ! empty( $item->url )        ? '#'.$item->ID     : '';    //use ID (numbers) to privent unexpected charachters
+        $atts['href']   = ! empty( $item->url )        ? '#'.$item->object_id     : '';    // Page ID corresponding to the current menu item ID (number is used to privent unexpected charachters)
 
         $atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
 

@@ -33,6 +33,6 @@ Domain Path: /lang
 @import 'partials/gallery';
 @import 'modules/comments';
 @import 'modules/footer';
-//@import 'partials/box';
+@import 'partials/box';
 @import 'partials/button';
-//@import 'partials/media';   //should be last one
+@import 'partials/media';   //should be last one
