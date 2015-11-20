@@ -193,6 +193,9 @@ button,
 [data-magellan-expedition-clone] {
   padding: 0; }
 
+.title-area .name {
+  display: none; }
+
 [data-magellan-expedition-clone] {
   visibility: hidden; }
 
@@ -572,10 +575,7 @@ input[type=submit],
     width: 49%; } }
 @media only screen and (min-width: 40em) {
   #header {
-    display: block; }
-
-  .title-area {
-    display: none; } }
+    display: block; } }
 @media only screen and (min-width: 42.5em) {
   #who {
     font-size: 4.0em; }

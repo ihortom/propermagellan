@@ -6,12 +6,9 @@
     }
 }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 40em) {  // 640px
     #header {
         display: block;
-    }
-    .title-area {
-        display: none;
     }
 }
 
